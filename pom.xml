@@ -12,6 +12,7 @@
         <module>isiyi-common</module>
         <module>isiyi-generator</module>
         <module>isiyi-order</module>
+        <module>isiyi-eureka</module>
     </modules>
     <packaging>pom</packaging>
 
