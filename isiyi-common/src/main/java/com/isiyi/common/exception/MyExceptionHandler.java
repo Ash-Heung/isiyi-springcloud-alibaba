@@ -1,7 +1,6 @@
 package com.isiyi.common.exception;
 
 
-import com.baomidou.mybatisplus.extension.exceptions.ApiException;
 import com.isiyi.common.entity.vo.ResultVO;
 import com.isiyi.common.enums.ResultEnum;
 import lombok.extern.slf4j.Slf4j;
@@ -32,7 +31,7 @@ public class MyExceptionHandler {
      * @param e
      * @return
      */
-    @ExceptionHandler(ApiException.class)
+    @ExceptionHandler(MyException.class)
     public ResultVO apiExceptionHandler(MyException e) {
         // log.error("【请求失败】{}\n\r", e.getStackTrace());
         e.printStackTrace();

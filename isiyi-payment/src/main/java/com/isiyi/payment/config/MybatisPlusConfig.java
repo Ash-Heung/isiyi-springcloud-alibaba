@@ -1,4 +1,4 @@
-package com.isiyi.common.config;
+package com.isiyi.payment.config;
 
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
