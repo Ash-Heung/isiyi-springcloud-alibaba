@@ -19,10 +19,12 @@ public class OrderController {
     @Resource
     private RestTemplate restTemplate;
 
+    private final static String PAYMENT_SERVER = "http://ISIYI-PAYMENT";
+
 
     @GetMapping("/findPayment/{id}")
     public ResultVO findPayment(@PathVariable("id") Long id){
-        ResponseEntity<ResultVO> forEntity = restTemplate.getForEntity("http://localhost:8081/payment/findOne/" + id, ResultVO.class);
+        ResponseEntity<ResultVO> forEntity = restTemplate.getForEntity(PAYMENT_SERVER+"/payment/findOne/" + id, ResultVO.class);
 
         ResultVO body = forEntity.getBody();
 

@@ -13,6 +13,8 @@
         <module>isiyi-generator</module>
         <module>isiyi-order</module>
         <module>isiyi-eureka</module>
+        <module>isiyi-eureka02</module>
+        <module>isiyi-payment02</module>
     </modules>
     <packaging>pom</packaging>
 
