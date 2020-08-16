@@ -1,7 +1,10 @@
 package com.isiyi.order.controller;
 
+import com.isiyi.common.domain.Payment;
 import com.isiyi.common.entity.vo.ResultVO;
+import com.isiyi.order.service.PaymentFeignService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,19 +19,16 @@ import javax.annotation.Resource;
 @RequestMapping("/order")
 public class OrderController {
 
-    @Resource
-    private RestTemplate restTemplate;
 
-    private final static String PAYMENT_SERVER = "http://ISIYI-PAYMENT";
+    @Autowired
+    private PaymentFeignService paymentFeignService;
 
 
     @GetMapping("/findPayment/{id}")
     public ResultVO findPayment(@PathVariable("id") Long id){
-        ResponseEntity<ResultVO> forEntity = restTemplate.getForEntity(PAYMENT_SERVER+"/payment/findOne/" + id, ResultVO.class);
+        ResultVO<Payment> vo = paymentFeignService.findById(id);
 
-        ResultVO body = forEntity.getBody();
-
-        return body;
+        return vo;
 
     }
 

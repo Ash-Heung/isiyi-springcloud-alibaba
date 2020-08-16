@@ -33,6 +33,9 @@ public class PaymentController {
         return new ResultVO().success(payment);
     }
 
+    public void  test(){
+        return;
+    }
 
 }
 

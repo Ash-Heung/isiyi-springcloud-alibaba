@@ -10,11 +10,10 @@
     <modules>
         <module>isiyi-payment</module>
         <module>isiyi-common</module>
-        <module>isiyi-generator</module>
         <module>isiyi-order</module>
         <module>isiyi-eureka</module>
-        <module>isiyi-eureka02</module>
         <module>isiyi-payment02</module>
+        <module>isiyi-hystrix-payment01</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -79,6 +78,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.2.2.RELEASE</version>
                 <configuration>
                     <fork>true</fork>
                     <addResources>true</addResources>
@@ -86,6 +86,8 @@
             </plugin>
         </plugins>
     </build>
+
+
 
 
 </project>
