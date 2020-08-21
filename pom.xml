@@ -14,6 +14,9 @@
         <module>isiyi-eureka</module>
         <module>isiyi-payment02</module>
         <module>isiyi-hystrix-payment01</module>
+        <module>isiyi-provider-payment9001</module>
+        <module>isiyi-provider-payment9011</module>
+        <module>isiyi-order83</module>
     </modules>
     <packaging>pom</packaging>
 

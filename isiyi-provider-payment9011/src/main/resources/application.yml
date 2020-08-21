@@ -1,0 +1,16 @@
+server:
+  port: 9011
+
+spring:
+  application:
+    name: isiyi-provider-payment9001
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #服务注册中心地址
+
+anagement:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
