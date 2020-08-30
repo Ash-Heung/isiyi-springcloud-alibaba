@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(value = "ISIYI-PAYMENT")
 public interface PaymentFeignService {
 
-    @GetMapping("/findOne/{id}")
+    @GetMapping("/payment/findOne/{id}")
     ResultVO<Payment> findById(@PathVariable("id") Long id);
 
 }
