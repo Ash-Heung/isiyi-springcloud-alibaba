@@ -1,6 +1,5 @@
 server:
-  port: 8001
-
+  port: 80
 
 eureka:
   client:
@@ -11,4 +10,4 @@ eureka:
 
 spring:
   application:
-    name: isiyi-hystrix-payment
+    name: isiyi-hystrix-feign-order80
