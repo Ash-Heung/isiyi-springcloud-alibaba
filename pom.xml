@@ -19,6 +19,8 @@
         <module>isiyi-order83</module>
         <module>isiyi-hystrix-payment8001</module>
         <module>isiyi-hystrix-feign-order80</module>
+        <module>isiyi-gateway9527</module>
+        <module>isiyi-config</module>
     </modules>
     <packaging>pom</packaging>
 
