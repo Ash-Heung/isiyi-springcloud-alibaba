@@ -21,6 +21,7 @@
         <module>isiyi-hystrix-feign-order80</module>
         <module>isiyi-gateway9527</module>
         <module>isiyi-config</module>
+        <module>isiyi-config-client</module>
     </modules>
     <packaging>pom</packaging>
 
