@@ -22,6 +22,9 @@
         <module>isiyi-gateway9527</module>
         <module>isiyi-config</module>
         <module>isiyi-config-client</module>
+        <module>isiyi-provider-payment9002</module>
+        <module>isiyi-alibaba-order83</module>
+        <module>isiyi-alibaba-config-server</module>
     </modules>
     <packaging>pom</packaging>
 
