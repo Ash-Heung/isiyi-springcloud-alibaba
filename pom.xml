@@ -29,6 +29,7 @@
         <module>isiyi-alibaba-sentinel-service8401</module>
         <module>isiyi-provider-payment9003</module>
         <module>isiyi-provider-payment9004</module>
+        <module>isiyi-consumer-order84</module>
     </modules>
     <packaging>pom</packaging>
 
