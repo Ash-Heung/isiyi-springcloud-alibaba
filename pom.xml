@@ -30,6 +30,7 @@
         <module>isiyi-provider-payment9003</module>
         <module>isiyi-provider-payment9004</module>
         <module>isiyi-consumer-order84</module>
+        <module>isiyi-consumer-order85</module>
     </modules>
     <packaging>pom</packaging>
 
